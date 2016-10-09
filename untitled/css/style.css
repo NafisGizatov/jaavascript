@@ -1,0 +1,142 @@
+
+body {
+    font-family: sans-serif;
+    color: #262825;
+}
+#header {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#user_info {
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+#arena_container {
+    font-size: 20px;
+    width: 700px;
+    margin: 0 auto;
+
+
+}
+
+#game_status {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.field_container {
+    margin: 0 auto;
+    float: right;
+    padding: 0px 35px 35px 35px;
+    border: 1px solid grey;
+    box-shadow: 18px 10px 17px -17px ;
+    background-image: url(../img/back_field.jpg);
+    background-size: 96.2%;
+    background-repeat: no-repeat;
+    background-position: 6px 46px;
+    text-align: center;
+}
+
+
+#bot_field{
+    margin-left: 30px;
+}
+
+#login_container {
+    display: table;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid grey;
+    box-shadow: 18px 10px 17px -17px ;
+    padding: 100px;
+    background-color: #fdffff;
+}
+
+#login_input{
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+    height: 30px;
+    width: 200px;
+    padding: 3px;
+}
+#login_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: sans-serif;
+    height: 36px;
+    width: 206px;
+    background-color: #5a7b79;
+    color: white;
+    border: 1px solid #5a7b79;
+    box-shadow: 18px 10px 17px -17px ;
+    cursor: pointer;
+
+}
+.game_title{
+
+    font-size: 26px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.field {
+    cursor: pointer;
+
+}
+
+
+.field td {
+    border: solid lightskyblue 1px;
+
+    height: 20px;
+    width: 20px;
+}
+.field td:hover {
+    border: solid lightskyblue 2px;
+    height: 18px;
+    width: 18px;
+    opacity: 0.7;
+
+
+}
+
+.fired_cell {
+    background-color: #dcfaf9;
+    cursor: default;
+    background-image: url(../img/missed.png);
+    background-size: cover;
+}
+
+.intact_ship {
+    background-color: #699492;
+    border: solid #699492 2px;
+    height: 18px;
+    width: 18px;
+    cursor: default;
+}
+.damaged_ship {
+    background-color: #bee4e3;
+    background-image: url(../img/damage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+
+.died_ship {
+    background-color: #5a7b79;
+    border: 1px solid #262825 !important;
+    cursor: default;
+    background-image: url(../img/damage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
