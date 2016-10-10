@@ -6,7 +6,7 @@ $(function () {
 var redCar = new Car('А123CT', 'red', 0, 0);
 var greenCar = new Car('А123CO', 'green', 100, 100);  
 var ferrari = new Ferrari ('007', 'red', 200, 50);
-ferrari.init();
+
     
     addEventListener("keypress", function(event) {
         switch (event.which){
@@ -93,13 +93,12 @@ Ferrari = function (id, color, x, y){
     
 };
 
-Ferrari.prototype = Object.create(Ferrari.prototype);
+Ferrari.prototype = Object.create(Car.prototype);
 Ferrari.prototype.constructor = Ferrari;
 
 Ferrari.prototype.init = function () {
-    //Car.prototype.init.apply(this);
-      
-      $(this.id).css('background-image', 'url("img/ferrari.png")');  
+    Car.prototype.init.apply(this);   
+    $(this.id).css('background-image', 'url("img/ferrari.png")');
     
 };
 
